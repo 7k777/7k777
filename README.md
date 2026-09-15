@@ -20,6 +20,15 @@
 - 设计虚拟余额、授权审批和操作审计流程
 - 当前版本仅处理虚拟账本，不连接真实银行账户
 
+### [Tags](https://github.com/7k777/tag-service)
+
+支持多账号使用的轻量级标签记录应用，覆盖前端、后端、数据库与线上部署。
+
+- 使用 FastAPI 与 Supabase，实现注册登录、Bearer Token 鉴权和账号数据隔离
+- 支持标签新增、列表、正文搜索、分类筛选、删除与高频标签统计
+- 原生 JavaScript 前端由 Cloudflare Worker 托管，并通过 API 代理连接后端
+- [在线体验](https://tags.newkis.cc) · [查看项目说明](https://github.com/7k777/tag-service#readme)
+
 ### [NetEase Music MCP Server](https://github.com/7k777/netease-music-mcp-server)
 
 让 MCP 客户端能够搜索歌曲、查询歌词、歌单与排行榜的轻量级服务。
@@ -54,15 +63,7 @@ C 语言课程设计：控制台超市管理系统。
 - 使用 Supabase 完成标签数据读取与搜索
 - 正在完善产品定位、核心使用流程与前端体验
 
-### Tags
-
-个人标签内容管理与检索项目，也是我最早持续迭代的作品之一。
-
-- 后端已提供标签读取、搜索、分类查询与统计接口
-- 使用 Supabase 保存和组织标签数据
-- 正在修复遗留问题并完善前端可视化
-
-> 两个项目目前仍在开发和代码整理阶段，达到可演示的 MVP 后会开放仓库与运行说明。
+> LumaNote 目前仍在开发和代码整理阶段，达到可演示的 MVP 后会开放仓库与运行说明。
 
 ## Currently Learning
 
