@@ -1,82 +1,69 @@
 # Hi, I'm 7k777 👋
 
-计算机专业本科在读，关注 **AI Agent 后端、MCP 工具服务与可部署的 Web 应用**。  
-我喜欢把想法做成能够运行、能够解释，也能够继续迭代的项目。
+计算机专业本科在读。  
+我更喜欢把想法做成**真的能运行、有人能用、出了问题也能继续维护**的东西。
 
-## What I'm Building
+目前主要在做：
 
-- AI Agent 的权限控制、工具调用与业务落地
-- Python 后端接口与轻量级服务
-- MCP Server、SSE 与 JSON-RPC
-- Docker、Nginx、Linux 服务部署与故障排查
+- **独立产品**：从需求、后端、数据到部署和迭代
+- **Python Backend**：FastAPI / Flask / SQLite / Supabase
+- **AI Agent & MCP**：工具调用、权限边界、Agent 基础设施
+- **Self-hosting & Ops**：Linux / Docker / Nginx / Cloudflare
 
-## Featured Projects
+> Build it. Ship it. Keep it alive.
+
+## ✦ Current Focus
+
+### [Stellula](https://stellula.cloud)
+
+面向大学生的竞赛发现、匹配与参赛记录平台。
+
+它想回答一个很具体的问题：
+
+> **“我学这个专业，现在到底有哪些比赛适合我？”**
+
+目前持续进行真实用户反馈、赛事数据整理、专业映射、推荐逻辑、竞赛墙与提醒等迭代。
+
+- **Live:** [stellula.cloud](https://stellula.cloud)
+- **Public showcase:** [Stellula-mini](https://github.com/7k777/Stellula-mini)
+- **Stack:** Python · FastAPI · SQLite · JavaScript · Linux
+
+## Selected Projects
 
 ### [Agent Wallet](https://github.com/7k777/agent-wallet)
-
-面向 AI Agent 的受控支付与资金治理原型。
-
-- 使用 Flask、SQLite 与 Docker 构建
-- 设计虚拟余额、授权审批和操作审计流程
-- 当前版本仅处理虚拟账本，不连接真实银行账户
+面向 AI Agent 的受控支付与资金治理原型。  
+关注预算、审批、权限边界、幂等、审计，以及未来真实支付适配器的安全接入。
 
 ### [Tags](https://github.com/7k777/tag-service)
+一个已经上线的轻量级全栈标签记录应用。  
+FastAPI + Supabase + Cloudflare Workers，包含账号、数据隔离、搜索、筛选与部署链路。
 
-支持多账号使用的轻量级标签记录应用，覆盖前端、后端、数据库与线上部署。
-
-- 使用 FastAPI 与 Supabase，实现注册登录、Bearer Token 鉴权和账号数据隔离
-- 支持标签新增、列表、正文搜索、分类筛选、删除与高频标签统计
-- 原生 JavaScript 前端由 Cloudflare Worker 托管，并通过 API 代理连接后端
-- [在线体验](https://tags.newkis.cc) · [查看项目说明](https://github.com/7k777/tag-service#readme)
+**Live:** [tags.newkis.cc](https://tags.newkis.cc)
 
 ### [NetEase Music MCP Server](https://github.com/7k777/netease-music-mcp-server)
-
-让 MCP 客户端能够搜索歌曲、查询歌词、歌单与排行榜的轻量级服务。
-
-- Python 标准库实现，无第三方运行依赖
-- 支持 SSE、JSON-RPC 与 7 个 MCP 工具
-- 提供 Docker 和 Render 部署配置
+Python 实现的轻量级 MCP 服务。  
+支持 SSE、JSON-RPC，以及歌曲、歌词、歌单、排行榜等工具调用。
 
 ### [VPS Deployment Guide](https://github.com/7k777/vps-deployment-guide)
-
-从部署命令到故障记录的服务器实践笔记。
-
-- 涵盖 Nginx、systemd、Fail2Ban 与基础安全配置
-- 记录真实部署问题、排查过程和回滚思路
-- 强调可验证、可恢复和避免破坏性操作
+个人服务器部署、排障与安全加固记录。  
+包含 Nginx、systemd、Fail2Ban、故障定位、回滚和公网服务安全实践。
 
 ### [Supermarket System](https://github.com/7k777/supermarket-system)
+C 语言课程设计。  
+使用结构体、文件读写完成商品与员工管理、查询、排序、统计和本地持久化。
 
-C 语言课程设计：控制台超市管理系统。
+## What I Care About
 
-- 使用结构体、数组与文件读写
-- 实现商品和员工信息的增删改查
-- 包含查询、排序、统计与本地数据持久化
+- 产品先解决真实问题，再堆功能
+- 推荐和自动化尽量可解释
+- 能部署只是开始，能维护和回滚更重要
+- Agent 获得更多能力时，权限与安全边界必须一起设计
+- 小项目也应该有清楚的 README、运行方式和边界说明
 
-## Projects in Progress
+## Tech
 
-### LumaNote
-
-面向学习与知识整理的标签化笔记应用。
-
-- 已搭建 FastAPI 后端与基础健康检查接口
-- 使用 Supabase 完成标签数据读取与搜索
-- 正在完善产品定位、核心使用流程与前端体验
-
-> LumaNote 目前仍在开发和代码整理阶段，达到可演示的 MVP 后会开放仓库与运行说明。
-
-## Currently Learning
-
-- LLM 应用开发与 Prompt 工程
-- RAG 检索增强与向量数据库
-- Function Calling、Agent 编排与工具安全
-- FastAPI、MySQL、Redis 与接口联调
-- 数据结构与算法基础
-
-## Tech Stack
-
-`Python` · `C` · `FastAPI` · `Flask` · `SQLite` · `MySQL` · `Docker` · `Linux` · `Nginx` · `MCP` · `Git`
+`Python` · `FastAPI` · `Flask` · `SQLite` · `Supabase` · `JavaScript` · `Docker` · `Linux` · `Nginx` · `Cloudflare` · `MCP` · `Git`
 
 ---
 
-正在寻找 **AI Agent / Python 后端相关的长期实习机会**，也欢迎交流项目设计与工程实践。
+**CS student · indie builder · still shipping.**
